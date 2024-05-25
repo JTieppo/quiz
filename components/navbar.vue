@@ -1,9 +1,9 @@
 <template>
-    <header class="px-20 bg-emerald-500 flex justify-between">
-        <nuxt-link to="/jogar" class=""></nuxt-link>
-        <div class="gap-4">
-            <nuxt-link to="/jogar" class="">Jogar</nuxt-link>
-            <a href="/#sobre">Sobre</a>
+    <header class="px-20 bg-teal-900 flex p-4 items-center gap-8 text-3xl">
+        <nuxt-link to="/" class="font-bold text-teal-200">Quiz</nuxt-link>
+        <div class="flex gap-8 text-white">
+            <nuxt-link to="/quiz" class="hover:text-teal-200">Jogar</nuxt-link>
+            <a href="/#sobre" class="hover:text-teal-200">Sobre</a>
         </div>
     </header>
 </template>
