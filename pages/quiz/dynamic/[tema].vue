@@ -46,7 +46,7 @@ function valida(opt) {
     verificado.value = true;
     if (opt === tema.perguntas[i.value].resposta) {
         valido.value = true;
-        pontuacao ++;
+        pontuacao.value ++;
     } else {
         valido.value = false;
     }
