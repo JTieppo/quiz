@@ -6,7 +6,7 @@
                 <h1 class="text-5xl mb-2">Que tal um quiz?</h1>
                 <p class="w-[500px]">Já se perguntou de onde vem tanto conhecimento? Ou mesmo como o adiquirimos? Não, não, espera... melhor que isso seria saber o quanto de conhecimento tem, agora sim ficou interessante, então que tal um quiz?</p>
             </div>
-            <nuxt-link to="/quiz"
+            <nuxt-link to="/quiz/selection"
                 class="mx-auto my-auto text-white bg-teal-600 rounded-full w-96 h-96 text-8xl flex jersey transition-colors duration-300 hover:bg-teal-300 hover:text-black">
                 <p class="my-auto mx-auto jersey">Jogar</p>
             </nuxt-link>
