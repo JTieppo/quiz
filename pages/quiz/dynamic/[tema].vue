@@ -73,7 +73,10 @@ function proxima() {
     verificado.value = false;
     positivo.value = false;
     negativo.value = false;
-    i.value++;
+    if(i<5){
+        console.log(i)
+        i.value++;
+    }
 }
 
 
