@@ -10,7 +10,7 @@
         </div>
         <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mt-10">
             <nuxt-link
-                class="bg-teal-600 hover:bg-teal-400 text-white hover:text-black rounded-lg p-2 px-4 xl:text-2xl xl:h-12"
+                class="bg-teal-600 hover:bg-teal-400 text-white hover:text-black rounded-lg p-2 px-4 text-xs sm:text-md md:text-xl "
                 v-for="tema in temas" :key="tema" :to="`/quiz/dynamic/${tema.link}`">{{ tema.nome }}</nuxt-link>
         </div>
     </div>

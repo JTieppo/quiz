@@ -10,8 +10,10 @@
         </h3>
         <div class="flex flex-col w-full gap-4">
             <h1 class="text-xl md:text-4xl">{{ tema.perguntas[i].pergunta }}</h1>
+            <p v-if="positivo == true">{{ tema.perguntas[i].feedbackPositivo }}</p>
+            <p v-else-if="negativo == true">{{ tema.perguntas[i].feedbackNegativo }}</p>
             <button :class="[
-                'rounded-lg p-2 px-4 xl:text-2xl h-12 w-full',
+                'rounded-lg p-2 px-4 xl:text-2xl w-full',
                 verificado && opt === tema.perguntas[i].resposta ? 'bg-green-600 text-white' :
                     verificado && opt !== tema.perguntas[i].resposta ? 'bg-red-700 text-white' :
                         'bg-teal-600 hover:bg-teal-400 text-white hover:text-black'
@@ -39,6 +41,8 @@ const i = ref(0);
 const verificado = ref(false);
 const valido = ref(false);
 const pontuacao = ref(0);
+const negativo = ref(false)
+const positivo = ref(false)
 
 
 function valida(opt) {
@@ -46,14 +50,18 @@ function valida(opt) {
     verificado.value = true;
     if (opt === tema.perguntas[i.value].resposta) {
         valido.value = true;
+        positivo.value = true;
         pontuacao.value ++;
     } else {
+        negativo.value = true;
         valido.value = false;
     }
 }
 
 function proxima() {
     verificado.value = false;
+    positivo.value = false;
+    negativo.value = false;
     i.value++;
 }
 
