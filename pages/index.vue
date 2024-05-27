@@ -1,6 +1,9 @@
 <template>
     <navbar />
-    <main class="p-6 md:p-10 min-h-screen scroll-smooth">
+    <main class="p-6 md:p-10 min-h-screen scroll-s">
+        <div class="scroll-s">
+
+        
         <section class="xl:h-screen flex flex-col xl:flex-row ">
             <div class="flex flex-col mx-auto xl:my-auto">
                 <h1 class="text-3xl xl:text-5xl mb-2 mx-auto xl:mx-0">Que tal um quiz?</h1>
@@ -11,14 +14,11 @@
                 <p class="my-auto mx-auto jersey">Jogar</p>
             </nuxt-link>
         </section>
-        <section class="flex flex-col xl:px-20 mt-20 max-w-[300px] lg:max-w-[700px] xl:max-w-[900px] mx-auto" id="sobre">
+        <section class="flex flex-col xl:px-20 mt-20 max-w-[300px] lg:max-w-[700px] xl:max-w-[900px] mx-auto mb-32" id="sobre">
             <h1 class="text-3xl xl:text-5xl mx-auto xl:mx-0 mb-2">Sobre o projeto</h1>
-            <p class="text-center xl:text-start text-xs xl:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores doloremque, officiis
-                labore
-                nisi deserunt quia veritatis dicta natus neque nemo ab eos pariatur dolores aut tempora, odit
-                eveniet
-                vitae. Recusandae?</p>
+            <p class="text-center xl:text-start text-xs xl:text-base">O projeto foi prototipado visando métodos divertidos de ensino e aprendizagem. Bem-vindo à seção de Quizzes de Informática e Tecnologia! Explore nossos desafios emocionantes sobre hardware, linguagens de programação e outros temas relacionados à tecnologia. Teste seus conhecimentos e aprimore suas habilidades nesta área fascinante. Prepare-se para mergulhar no mundo da informática e descobrir o que você sabe e o que ainda pode aprender!</p>
         </section>
+    </div>
     </main>
 </template>
 
@@ -40,6 +40,10 @@ export default {
 
 .jersey {
     font-family: Jersey;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /* css caso queiram mudar algo */
